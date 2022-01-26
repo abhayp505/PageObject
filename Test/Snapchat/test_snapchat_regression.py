@@ -9,7 +9,7 @@ class TestLogin(BaseTest):
 
     def test_opsweb_login(self):
         self.loginPage = LoginPage(self.driver)
-        self.loginPage.login_opsweb("ops_web_test_user@oracle.com", "Password@123")
+        self.loginPage.login_opsweb("email", "password")
         time.sleep(10)
 
     # def test_opsweb_login1(self):
